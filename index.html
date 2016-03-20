@@ -14,13 +14,16 @@
 
     <div class="container" ng-controller="PricePerUnitController">
       <div class="row">
-        <label class="col-xs-2">Cost: </label><input class="col-xs-4" ng-model="input.cost" ng-change="input.change(input.cost, input.unit)" type="text" />
+        <label class="col-xs-2">Cost: </label><input class="col-xs-4" ng-model="left.cost" ng-change="left.change(left.cost, left.unit)" type="text" />
+        <label class="col-xs-2">Cost: </label><input class="col-xs-4" ng-model="right.cost" ng-change="right.change(right.cost, right.unit)" type="text" />
       </div>
       <div class="row">
-        <label class="col-xs-2">Unit: </label><input class="col-xs-4" ng-model="input.unit" ng-change="input.change(input.cost, input.unit)" type="text" />
+        <label class="col-xs-2">Unit: </label><input class="col-xs-4" ng-model="left.unit" ng-change="left.change(left.cost, left.unit)" type="text" />
+        <label class="col-xs-2">Unit: </label><input class="col-xs-4" ng-model="right.unit" ng-change="right.change(right.cost, right.unit)" type="text" />
       </div>
       <div class="row">
-        <label class="col-xs-2">Cost / Unit: </label><label class="col-xs-4">{{input.costperunit}}</label>
+        <label class="col-xs-2">Cost / Unit: </label><label class="col-xs-4">{{left.costperunit}}</label>
+        <label class="col-xs-2">Cost / Unit: </label><label class="col-xs-4">{{right.costperunit}}</label>
       </div>
     </div>
 
