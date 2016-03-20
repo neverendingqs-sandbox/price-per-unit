@@ -14,13 +14,13 @@
 
     <div class="container" ng-controller="PricePerUnitController">
       <div class="row">
-        <label>Cost: </label><input ng-model="input.cost" ng-change="input.change(input.cost, input.unit)" type="text" />
+        <label class="col-xs-2">Cost: </label><input class="col-xs-4" ng-model="input.cost" ng-change="input.change(input.cost, input.unit)" type="text" />
       </div>
       <div class="row">
-        <label>Unit: </label><input ng-model="input.unit" ng-change="input.change(input.cost, input.unit)" type="text" />
+        <label class="col-xs-2">Unit: </label><input class="col-xs-4" ng-model="input.unit" ng-change="input.change(input.cost, input.unit)" type="text" />
       </div>
       <div class="row">
-        <label>Cost / Unit: </label><label>{{input.costperunit}}</label>
+        <label class="col-xs-2">Cost / Unit: </label><label class="col-xs-4">{{input.costperunit}}</label>
       </div>
     </div>
 
