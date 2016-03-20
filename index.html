@@ -1,1 +1,36 @@
-Hello World
+<!DOCTYPE html>
+<html ng-app="neverendingqsPricePerUnitApp">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>neverendingqs - Price Per Unit</title>
+
+    <!-- bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css" rel="stylesheet" integrity="sha256-IF1P9CSIVOaY4nBb5jATvBGnxMn/4dB9JNTLqdxKN9w= sha512-UsfHxnPESse3RgYeaoQ7X2yXYSY5f6sB6UT48+F2GhNLqjbPhtwV2WCUQ3eQxeghkbl9PioaTOHNA+T0wNki2w==" crossorigin="anonymous">
+
+    <!-- font awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
+
+    <div class="container" ng-controller="PricePerUnitController">
+      <div class="row">
+        <label>Cost: </label><input ng-model="input.cost" ng-change="input.change(input.cost, input.unit)" type="text" />
+      </div>
+      <div class="row">
+        <label>Unit: </label><input ng-model="input.unit" ng-change="input.change(input.cost, input.unit)" type="text" />
+      </div>
+      <div class="row">
+        <label>Cost / Unit: </label><label>{{input.costperunit}}</label>
+      </div>
+    </div>
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+    <!-- angular -->
+    <script src="https://code.angularjs.org/1.4.7/angular.min.js"></script>
+    <script src="app.js"></script>
+
+  </body>
+</html>
